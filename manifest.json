@@ -1,0 +1,23 @@
+{
+    "manifest_version": 2,
+    "name": "Wildcards Extension for Scratch 3",
+    "description": "This extension allows your Wildcards board to work with Scratch 3",
+    "version": "0.1",
+    "content_scripts": [
+        {
+            "matches": ["https://www.google.com/*"],
+            "for_scratch_change_to_matches": ["http://localhost:8601"],
+            "css": ["main.css"]
+        }
+    ],
+    "icons":{
+        "16":"images/icon-16.png", 
+        "48":"images/icon-48.png", 
+        "128":"images/icon-128.png" 
+    },
+    "page_action": {
+        "default_icon": "images/icon-16.png",
+        "default_popup": "popup.html",
+        "default_title": "Welcome to Wildcards!"
+    }
+   }
